@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tan Luc's Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tan Luc's Library</h1>
+        <div class="theme">
+            <button class="btn">Log in</button>
+            <span class="material-icons-outlined" title="Toggle to Dark Mode" style="cursor: pointer;">
+                dark_mode
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <button class="add-book-btn" data-add-btn>+ Add Book</button>
+            <dialog data-modal>
+                <form action="" method="" data-form>
+                    <h3>Add new book</h3>
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Name" data-name autocomplete="off">
+                    </div>
+                    <div>
+                        <input type="text" id="author" name="author" placeholder="Author" data-author autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="checkbox">
+                            <span>Have you read this book?</span>
+                            <input type="checkbox" name="checkbox" id="checkbox" data-checkbox>
+                        </label>
+                    </div>
+                    <div class="buttons">
+                        <button class="submit-btn" data-submit-btn>SUBMIT</button>
+                        <button class="close-btn" data-close-btn autofocus formmethod="dialog">CLOSE</button>
+                    </div>
+                </form>
+            </dialog>
+        </div>
+        <article class="books-container" data-books-container>
+        </article>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2024 by <a href="https://github.com/TanLuc2410" target="_blank">TanLuc2410</a></p>
+    </footer>
+</body>
+</html>
